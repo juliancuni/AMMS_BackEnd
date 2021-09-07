@@ -6,6 +6,7 @@ import { ConfModule } from './helpers/config/conf.module';
 import { AuthModule } from './Authentication/auth/auth.module';
 import { SubjektiModule } from './subjekti/subjekti.module';
 import { MagazinaModule } from './Inventari/magazina/magazina.module';
+import { ArtikulliModule } from './inventari/artikulli/artikulli.module';
 
 @Module({
   imports: [
@@ -16,6 +17,7 @@ import { MagazinaModule } from './Inventari/magazina/magazina.module';
     AuthModule,
     SubjektiModule,
     MagazinaModule,
+    ArtikulliModule,
   ],
   controllers: [],
   providers: [],
