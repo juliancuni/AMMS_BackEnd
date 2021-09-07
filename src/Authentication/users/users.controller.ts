@@ -2,8 +2,8 @@ import { Body, Controller, DefaultValuePipe, Delete, Get, Param, ParseIntPipe, P
 import { AuthGuard } from '@nestjs/passport';
 import { ApiBody, ApiParam, ApiQuery, ApiTags } from '@nestjs/swagger';
 import { Pagination } from 'nestjs-typeorm-paginate';
-import { Roles } from 'src/auth/decorators/role.decorator';
-import { RolesGuard } from 'src/auth/guards/roles.guard';
+import { Roles } from 'src/Authentication/auth/decorators/role.decorator';
+import { RolesGuard } from 'src/Authentication/auth/guards/roles.guard';
 import { UpdateUserDto } from './dto/update-user.dto';
 import { UserDto } from './dto/user.dto';
 import { UsersService } from './users.service';

@@ -1,6 +1,6 @@
 import { Exclude, Expose } from 'class-transformer';
 import { IsEmail } from 'class-validator';
-import { RoleDto } from 'src/roles/dto/role.dto';
+import { RoleDto } from 'src/Authentication/roles/dto/role.dto';
 
 export class UserDto {
 

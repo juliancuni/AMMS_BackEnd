@@ -1,5 +1,5 @@
 import AppBaseEntity from 'src/helpers/shared/base.entity';
-import { UserEntity } from 'src/users/entities/user.entity';
+import { UserEntity } from 'src/Authentication/users/entities/user.entity';
 import { Column, Entity, ManyToMany, Unique } from 'typeorm';
 
 @Entity('roles')

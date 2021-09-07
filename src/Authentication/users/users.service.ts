@@ -1,10 +1,10 @@
 import { BadRequestException, Injectable, NotFoundException } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { IPaginationOptions, paginate, Pagination } from 'nestjs-typeorm-paginate';
-import { RegisterUserDto } from 'src/auth/dto/register-user.dto';
+import { RegisterUserDto } from 'src/Authentication/auth/dto/register-user.dto';
 import { PaginationDto } from 'src/helpers/shared/pagination.dto';
-import { RoleDto } from 'src/roles/dto/role.dto';
-import { RolesService } from 'src/roles/roles.service';
+import { RoleDto } from 'src/Authentication/roles/dto/role.dto';
+import { RolesService } from 'src/Authentication/roles/roles.service';
 import { FindOneOptions, Repository } from 'typeorm';
 import { UpdateUserDto } from './dto/update-user.dto';
 import { UserDto } from './dto/user.dto';
