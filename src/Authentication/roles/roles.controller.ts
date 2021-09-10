@@ -2,7 +2,6 @@ import { Body, Controller, Delete, Get, Param, Patch, Post } from '@nestjs/commo
 import { ApiTags } from '@nestjs/swagger';
 import { RoleDto } from './dto/role.dto';
 import { UpdateRoleDto } from './dto/update-role.dto';
-import { RoleEntity } from './entities/role.entity';
 import { RolesService } from './roles.service';
 
 @ApiTags('Roles CRUD')

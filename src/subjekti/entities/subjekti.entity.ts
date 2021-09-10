@@ -1,1 +1,1 @@
-export class Subjekti {}
+export class SubjektiEntity {}

@@ -6,7 +6,9 @@ import { ConfModule } from './helpers/config/conf.module';
 import { AuthModule } from './Authentication/auth/auth.module';
 import { SubjektiModule } from './subjekti/subjekti.module';
 import { MagazinaModule } from './Inventari/magazina/magazina.module';
-import { ArtikulliModule } from './inventari/artikulli/artikulli.module';
+import { ArtikulliModule } from './Inventari/artikulli/artikulli.module';
+import { CarsModule } from './parts-catalog/cars/cars.module';
+import { ScheduleModule } from '@nestjs/schedule';
 
 @Module({
   imports: [
@@ -18,6 +20,8 @@ import { ArtikulliModule } from './inventari/artikulli/artikulli.module';
     SubjektiModule,
     MagazinaModule,
     ArtikulliModule,
+    CarsModule,
+    ScheduleModule.forRoot()
   ],
   controllers: [],
   providers: [],
